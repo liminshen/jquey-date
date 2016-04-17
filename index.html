@@ -3,15 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="style/css/date.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="style/css/date.min.css">
 	<script src="js/lib/require/require.min.js"></script>
-	<script src="js/common/"></script>
+	<script src="js/requireconfig.min.js"></script>
 </head>
 <body>
-	<input type="text" class="data-time">
-	<input type="text" class="date">
+	年月日,时分<input type="text" class="data-time"><br>
+	年月日<input type="text" class="date">
 	<script>
-		
+		require(['app/date'],function () {
+		});
 	</script>
 </body>
 </html>

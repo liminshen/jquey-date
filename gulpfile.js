@@ -27,14 +27,14 @@ gulp.task('less', function() {
         .pipe(browserSync.stream());
 });
 gulp.task('miniJS',function () {
-    return gulp.src(['js/*.js','!js/*.min.js'])
+    return gulp.src(['js/app/*.js','!js/app/*.min.js'])
             .pipe(uglify({
                 mangle:{except: ['require' ,'exports' ,'module' ,'$']},//排除混淆关键字
                 compress: true,//类型：Boolean 默认：true 是否完全压缩
                 preserveComments: 'all' //保留所有注释
             }))
             .pipe(rename({suffix: '.min'}))
-            .pipe(gulp.dest('js'))
+            .pipe(gulp.dest('js/app'))
             .pipe(notify({ message: 'Styles task complete' }))
             .pipe(browserSync.stream());
 })
