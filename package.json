@@ -1,0 +1,41 @@
+{
+  "name": "xm",
+  "version": "0.0.1",
+  "description": "do it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "date",
+    "scroll",
+    "in",
+    "phone"
+  ],
+  "author": "sam",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.12.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-connect": "^3.2.2",
+    "gulp-less": "^3.0.5",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3"
+  },
+  "dependencies": {
+    "gulp-less": "^3.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liminshen/scrolldate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/liminshen/scrolldate/issues"
+  },
+  "homepage": "https://github.com/liminshen/scrolldate#readme"
+}
